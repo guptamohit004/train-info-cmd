@@ -38,7 +38,7 @@ rl.question('Enter the Train Number ', (answer1) => {
 			console.log("Train Starts At ",time.join (''));
 			console.log("-------------------------------------------------------------------------------------");
 			}
-		for(var i = 0;i<body.route.length;i++)
+		for(var i = 1;i<=body.route.length;i++)
 		{
 			var time = body.route[i].schdep;
 		 	time = time.toString ().match (/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
